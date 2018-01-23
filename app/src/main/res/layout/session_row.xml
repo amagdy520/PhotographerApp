@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_close_30dp"
+                android:background="@drawable/circle_but"
+                android:id="@+id/delete_session"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Date + Time"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/OfferTime"
+                />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_but"
+            android:background="#00ffffff"
+            android:id="@+id/SessionImage"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SessionTitle"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:hint="Session Title Is Here..."
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SessionDetails"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:hint="Details Is Here..."
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SessionPrice"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:hint="Price Is Here..."
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SessionNote"
+            android:textSize="15dp"
+            android:hint="Notes Is Here..."
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

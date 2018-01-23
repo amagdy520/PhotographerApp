@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stylist.stylist.Modify"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+        <ImageButton
+            android:scaleType="centerInside"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_profile"
+            android:layout_gravity="center"
+            android:background="#00FF"
+            android:id="@+id/add_profile_pic"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <EditText
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000"
+                android:hint="Your Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ph_name_edit"
+                android:padding="10dp"
+                android:background="@drawable/input_outline"
+                android:maxLines="2"
+                />
+            <EditText
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000"
+                android:hint="Your Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/ph_name_edit"
+                android:layout_marginTop="24dp"
+                android:id="@+id/ph_details_edit"
+                android:padding="10dp"
+                android:background="@drawable/input_outline"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Save Changes"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/save_change"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="@drawable/round_but2"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
